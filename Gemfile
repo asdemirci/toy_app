@@ -8,7 +8,8 @@ gem 'coffee-rails', '4.2.1'
 gem 'jquery-rails', '4.1.1'
 gem 'turbolinks',   '5.0.1'
 gem 'jbuilder',     '2.4.1'
-
+gem 'guard'  # latest released is fine
+gem 'guard-bundler'
 
 group :development, :test do
   gem 'sqlite3', '1.3.11'
@@ -17,7 +18,7 @@ end
 
 group :development do
   gem 'web-console',           '3.1.1'
-  gem 'listen',                '3.0.8'
+  gem 'listen',                '3.0.8', git: 'https://github.com/chronomantic/listen', branch: 'for_debugging'
   gem 'spring',                '1.7.2'
   gem 'spring-watcher-listen', '2.0.0'
 end
